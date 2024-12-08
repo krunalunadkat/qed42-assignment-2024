@@ -27,16 +27,16 @@
 }
 
 .city-table-description {
-  font-size: 1rem; /* Match table readability */
-  color: #555; /* Subtle gray text */
-  background-color: #f8f8f8; /* Match table aesthetics */
-  padding: 8px 12px; /* Compact padding */
-  border: 1px solid #ddd; /* Consistent border style with the table */
-  margin: 0 auto 12px; /* Center the description and add bottom spacing */
-  text-align: left; /* Align text with table cells */
-  font-style: italic; /* Subtle emphasis */
-  max-width: 100%; /* Ensure it doesn’t exceed the table width */
-  width: 100%; /* Match table width */
-  box-sizing: border-box; /* Include padding and borders in the width */
+  font-size: 1rem;
+  color: #555;
+  background-color: #f8f8f8;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  margin: 0 auto 12px;
+  text-align: left;
+  font-style: italic;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
