@@ -1,0 +1,15 @@
+qed_entity.city_add:
+  title: 'Add City'
+  route_name: qed_entity.city_add
+  description: 'List city'
+  parent: system.admin_content
+qed_entity.collection:
+  title: 'City List'
+  route_name: qed_entity.collection
+  description: 'List city'
+  parent: system.admin_content
+qed_entity.city_settings:
+  title: 'City settings'
+  description: 'Configure city entity'
+  route_name:  qed_entity.city_settings
+  parent: system.admin_structure

@@ -1,0 +1,4 @@
+qed_entity_styles:
+  css:
+    theme:
+      css/style.css: {}

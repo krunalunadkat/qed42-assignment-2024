@@ -1,0 +1,5 @@
+name: QED42 Entity
+type: module
+description: Creates a custom "City" entity with an admin interface, supporting structured city data management and extensibility.
+package: QED
+core_version_requirement:  ^9.5 || ^10

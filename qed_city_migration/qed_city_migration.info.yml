@@ -1,0 +1,10 @@
+name: 'QED City Migration'
+type: module
+description: Facilitates city data migration from a JSON file.
+core_version_requirement: ^9.5 || ^10
+package: QED
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_plus
+  - drupal:migrate_tools
+  - qed_entity

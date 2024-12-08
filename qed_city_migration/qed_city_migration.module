@@ -1,0 +1,23 @@
+<?php
+use Drupal\Core\Config\ConfigFactoryInterface;
+
+/**
+ * Implements hook_uninstall().
+ */
+function qed_city_migration_uninstall() {
+  // Get the configuration factory service.
+  $config_factory = \Drupal::service('config.factory');
+  
+  // List the migration configurations to delete.
+  $migrations = [
+    'migrate_plus.migration.qed_city_import',
+  ];
+  
+  // Delete each migration configuration.
+  foreach ($migrations as $migration) {
+    $config = $config_factory->getEditable($migration);
+    if ($config) {
+      $config->delete();
+    }
+  }
+}

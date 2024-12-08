@@ -1,0 +1,51 @@
+id: qed_city_import
+label: 'QED City Data Import'
+migration_group: default
+
+# Source configuration
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+     - modules/custom/qed_city_migration/data/city.json
+  item_selector: 0
+  fields:
+    - 
+      name: _id
+      label: 'City ID'
+      selector: _id
+    - 
+      name: city
+      label: 'City'
+      selector: city
+    - 
+      name: loc
+      label: 'Location'
+      selector: loc
+    - 
+      name: pop
+      label: 'Population'
+      selector: pop
+    - 
+      name: state
+      label: 'State'
+      selector: state
+  ids:
+    _id:
+      type: string
+      length: 255
+
+# Process configuration
+process:
+  name: city
+  loc:
+    plugin: array_to_string
+    source: loc
+  pop: pop
+  state: state
+  cityid: _id
+
+# Destination configuration
+destination:
+  plugin: entity:qed_entity_city

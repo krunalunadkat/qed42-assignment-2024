@@ -1,0 +1,42 @@
+.city-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.city-table th, .city-table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.city-table th {
+  background-color: #f2f2f2;
+}
+
+.city-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.city-table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.city-table a:hover {
+  text-decoration: underline;
+}
+
+.city-table-description {
+  font-size: 1rem; /* Match table readability */
+  color: #555; /* Subtle gray text */
+  background-color: #f8f8f8; /* Match table aesthetics */
+  padding: 8px 12px; /* Compact padding */
+  border: 1px solid #ddd; /* Consistent border style with the table */
+  margin: 0 auto 12px; /* Center the description and add bottom spacing */
+  text-align: left; /* Align text with table cells */
+  font-style: italic; /* Subtle emphasis */
+  max-width: 100%; /* Ensure it doesn’t exceed the table width */
+  width: 100%; /* Match table width */
+  box-sizing: border-box; /* Include padding and borders in the width */
+}
+
